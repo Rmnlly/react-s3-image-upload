@@ -1,0 +1,28 @@
+{
+  "name": "react-s3-image-upload",
+  "version": "1.0.0",
+  "description": "react app with express sever, uploading an image to s3",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rmnlly/react-s3-image-upload.git"
+  },
+  "author": "rmnlly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rmnlly/react-s3-image-upload/issues"
+  },
+  "homepage": "https://github.com/Rmnlly/react-s3-image-upload#readme",
+  "dependencies": {
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
